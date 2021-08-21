@@ -13,6 +13,8 @@ import { MatModule } from './modules/matmodule/matmodules';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormlyModule } from '@ngx-formly/core';
 import { FormlyMaterialModule } from '@ngx-formly/material';
+import { ProductosComponent } from './components/base/productos/productos.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { FormlyMaterialModule } from '@ngx-formly/material';
     LoginComponent,
     RegisterComponent,
     ProfileComponent,
-    SimulatorComponent
+    SimulatorComponent,
+    ProductosComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,8 @@ import { FormlyMaterialModule } from '@ngx-formly/material';
     MatModule,
     ReactiveFormsModule,
     FormlyModule.forRoot({ extras: { lazyRender: true } }),
-    FormlyMaterialModule
+    FormlyMaterialModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

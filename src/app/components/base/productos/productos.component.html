@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-12 py-3">
+        <ngb-carousel *ngIf="event_list">
+          <ng-template ngbSlide *ngFor="let event of current_events">
+            <img [src]="event.img" alt="Productos" width="600px" height="600px">
+            <div class="carousel-caption">
+                <h1 style="font-size: 1.2rem; padding: 15px; font-weight: bold; text-align: center;">Crédito inmediato sin necesidad de una cuenta bancaria</h1>
+                <h4 style="padding: 15px;font-size: 0.8rem; text-align: center;">Puedes solicitar un crédito desde 
+                    <span style="font-weight: bold;">$15,000.00</span> y hasta 
+                    <span style="font-weight: bold;">$50,000.00</span>
+                </h4>
+                <h4 style="font-size: 0.8rem;">Selecciona el monto de tu crédito</h4>
+                <mat-slider style="width: 350px;"></mat-slider>
+                <h4 style="font-size: 0.8rem;">Selecciona el plazo en que deseas liquidar tu crédito</h4>
+                <mat-slider style="width: 350px;"></mat-slider>
+                <p class="monto ng-star-inserted" id="valueRange" style="padding: 0 15px; font-size: 0.8em; text-align: center;">Estás solicitando un crédito por:
+                     <span style="font-weight: bold;">$20,000.00 pesos</span>
+                </p>
+                <p class="pagos ng-star-inserted" id="pagosSemanales" style="padding: 0 15px;font-size: 0.8em; text-align: center;">A pagar en: 
+                    <span style="font-weight: bold;">16 pagos quincenales,
+                     <br> cada uno deberá ser por la cantidad de: $2,331.99 pesos
+                    </span>
+                </p>
+                <p class="aviso ng-star-inserted" id="pagosSemanales" style="padding: 0 15px;font-size: 0.8em; text-align: center  ;">El monto de pago quincenal mostrado, contempla un 
+                    <span style="font-weight: bold;">seguro de vida
+                    </span> con un costo de
+                    <span style="font-weight: bold;">$25.00
+                    </span> pesos, por cada quincena seleccionada
+                </p>
+<!--               <p [innerText]="event.eventDescription"></p>
+ -->            </div>
+          </ng-template>
+        </ngb-carousel>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="col" size="6">
+    <div class="row" class="justify-content-center">
+      <label class="encabezadoSimulador">Monto solicitado</label>
+    </div>
+    <div class="row" class="justify-content-center" *ngIf="creditAmmount > 0">
+      <label style="font-size: 48px;">$ {{creditAmmountSelected}}.00</label>
+    </div>
+    <div class="row" class="justify-content-center" *ngIf="creditAmmount > 0">
+      <label style="font-size: 22px;">Necesitarás realizar {{palApuroProduct.monthsToPay}} pagos semanales de: ${{monthlyAmmountToPay | number:'3.2-2'}} para liquidar tu crédito</label>
+      <label style="font-size: 15px;">(Incluye un seguro de vida)</label>
+    </div>
+    <row>
+      <div class="col" size="12">
+        <item>
+          <range id="creditAmmountRange" min="{{palApuroProduct.minAmmount}}" max="{{palApuroProduct.maxAmmount}}" step="{{palApuroProduct.increment}}" pin="true" color="primary" [(ngModel)]="creditAmmountSelected" (ionChange)="monthlyPayment()">
+          </range>
+        </item>
+    </div>
+    </div>
+</div>
+  <div class="row" class="justify-content-center">
+    <button (click)="creditRequest()">Solicitalo Aquí</button>
+  </div> -->
