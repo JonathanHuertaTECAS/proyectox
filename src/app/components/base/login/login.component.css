@@ -1,0 +1,19 @@
+.card{
+    border: none;
+}
+.btn-inicio{
+    color: #FFFFFF;
+    background: #F2A400;
+    height: 36px;
+    width: -webkit-fill-available;
+    opacity: 50%;
+    border-color: #F2A400;
+    font-size: 17px;
+}
+.btn-register{
+    background: white;
+    border-width: 1px;
+    border-color: #F2A400;
+    color: #F2A400;
+    border-radius: 4px;
+}
