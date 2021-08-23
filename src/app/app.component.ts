@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
-import { menuList } from './components/base/Items/Models/menu-list';
+import { menuList } from './components/base/Items/menu-list';
 
 
 
