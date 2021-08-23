@@ -1,0 +1,90 @@
+.full-height {
+    height: 100%;
+    width: 100%;
+}
+
+.with-icon {
+    display: flex;
+    align-items: center;
+    color:black;
+    font-size: 17px;
+    padding-top: 14px;
+    padding-left: 12px;
+    padding-bottom: 11PX;
+    border-bottom: inset;
+}
+  @media (max-width: 767px) {
+    .show
+    {
+      margin-left: -15rem!important;
+    }
+    .hide
+    {
+      margin-left: -0!important;
+    }
+  }
+  .mat-toolbar-single-row{
+    padding: 0% 0%;
+    border-bottom: inset;
+}
+  div.logo-menu-close {
+    background: url(https://tecreemostodosiqa.blob.core.windows.net/public/logo.svg);
+    display: block;
+    width: 42px;
+    height: 28px;
+    background-repeat: no-repeat;
+    margin-left: 15px;
+    transition: width 0.24s, margin-left 0.5s
+}
+div.logo-menu-open {
+    background: url(https://tecreemostodosiqa.blob.core.windows.net/public/logo.svg);
+    display: block;
+    width: 250px;
+    background-repeat: no-repeat;
+    height: 28px;
+    margin-left: 12px;
+}
+
+.toolbar-logo{
+    width: fit-content; 
+    height: 55px;
+    background: white; 
+    align-self: stretch; 
+    box-shadow: 0 2px 8px 0 rgb(57 74 91 / 30%);
+}
+.toolbar-nav{
+    height: 55px;
+    align-self: stretch; 
+    box-shadow: 0 2px 8px 0 rgb(57 74 91 / 30%);
+}
+
+
+.m-main{
+  padding: 1rem 2rem 4rem;
+  margin-left: 10px;
+  transition: all 0.15s ease-in-out 0s;
+}
+
+
+.m-main-large{
+  margin-left:68px !important;
+}
+
+.m-sidenav{
+  width: 261px;
+  min-height: 100%;
+  transition: all 0.15s ease-in-out 0s;
+  box-shadow: 0 2px 8px 0 rgb(57 74 91 / 30%);
+  color: black;
+}
+
+  .m-sidenav-small{
+    width:58px;
+    color: black;
+
+  }
+
+
+.mat-menu-item{
+  color: unset;
+}

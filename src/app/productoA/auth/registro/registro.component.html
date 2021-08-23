@@ -1,0 +1,96 @@
+<ion-header>
+</ion-header>
+<ion-content class="ion-padding">
+
+  <ion-card>
+    <div class="title" class="ion-padding">
+      <ion-img
+          src="https://app.todosi.com/App/assets/logo-todo-si-inicio-sesion1.png"
+          style="width: 20%;" ></ion-img>
+      <h4>¡Bienvenido!</h4>
+      <p>Registrarte es muy sencillo.</p>
+      <p>Para continuar con tu solicitud, ayúdanos con los siguientes datos:</p>
+
+          <ion-item>
+            <ion-label
+                position="floating"
+                color="dark">
+                  <small>Email</small>
+              </ion-label>
+            <ion-input  type="email" autocomplete="off"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label
+                position="floating"
+                color="dark">
+                  <small>Telefono celular</small>
+              </ion-label>
+            <ion-input  type="number"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label
+                position="floating"
+                color="dark"
+                size="small">
+                  <small>Contraseña</small>
+              </ion-label>
+            <ion-input
+                type="password"
+                required></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label
+                position="floating"
+                color="dark"
+                size="small">
+                  <small>Ponfirma tu Contraseña</small>
+              </ion-label>
+            <ion-input
+                type="password"
+                required></ion-input>
+          </ion-item>
+
+      <div class="ion-margin-top">
+            <ion-item >
+              <ion-label style="font-size: 12px;">Al registrarte, confirmas que aceptas el</ion-label>
+              <ion-checkbox slot="start"></ion-checkbox>
+                  <a
+                      href="https://todosi.com/#/aviso-de-privacidad"
+                      target="_blank"
+                      style="text-decoration:underline;color:rgb(0, 140, 255)">
+                      <small> aviso de privacidad</small>
+                  </a>
+            </ion-item>
+      </div>
+
+      <div class="ion-margin-top">
+        <ion-button
+            expand="block"
+            (click)="login()"
+            size="small">Registarse
+        </ion-button>
+      </div>
+
+      <div class="ion-margin-top ion-padding" >
+        <ion-button
+            expand="block"
+            size="small"
+            shape="round"
+            fill="clear">¿Ya eres usuario?
+        </ion-button>
+      </div>
+
+      <ion-button
+          href="https://todosi.com/#/index"
+          fill="clear"
+          shape="round"
+          color="danger">
+        <small>Ir a la pagina Principal</small>
+      </ion-button>
+    </div>
+
+  </ion-card>
+</ion-content>

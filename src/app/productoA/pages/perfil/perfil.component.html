@@ -1,0 +1,19 @@
+<div class="container-fluid">
+  <div class="row justify-content-center">
+      <div class="card">
+          <img class="card-img-top" src="https://i.ibb.co/DGLdnfc/user-font-awesome-nuevo-usuario-icono-11563566658mjtfvilgcs.png" style="border-radius: 50%; max-width: 8vw; align-self: center;" alt="Card image cap"> 
+          <div class="card-body col-4 mx-auto" style="padding: 0%;">
+              <h1 style="font-weight: bold; text-align: center; font-size: 1.7em;">UserName LastName</h1>
+              <h3 style="text-align: center;font-size: 1.3em ;color: #394A5B;">Mail@mail.xom</h3>
+              <hr style="border-width: 2px; border-color: black;">
+              <form [formGroup]="form" (ngSubmit)="actualizar(model)">
+                  <formly-form [form]="form" [fields]="fields" [model]="modelPerfil" >
+                  </formly-form>
+                  <button type="submit" class="btn-register" fill="outline">
+                      Actualizar
+                  </button>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>

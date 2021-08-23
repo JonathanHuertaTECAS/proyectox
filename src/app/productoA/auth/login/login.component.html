@@ -1,0 +1,69 @@
+<ion-header>
+</ion-header>
+<ion-content class="ion-padding">
+
+  <ion-card>
+    <div class="title" class="ion-padding">
+      <ion-img
+          src="https://app.todosi.com/App/assets/logo-todo-si-inicio-sesion1.png"
+          style="width: 20%;" ></ion-img>
+      <h4>¡Hola!</h4>
+      <p>Bienvenido</p>
+      <p>Escribe tu correo electrónico para ingresar,
+        si no eres usuario, regístrate.</p>
+
+          <ion-item>
+            <ion-label
+                position="floating"
+
+                color="dark">
+                  <small>Email</small>
+              </ion-label>
+            <ion-input  type="email"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label
+                position="floating"
+                color="dark"
+                size="small">
+                  <small>Contraseña</small>
+              </ion-label>
+            <ion-input
+                type="password"
+                required></ion-input>
+          </ion-item>
+
+      <div class="ion-margin-top ion-text-right forget">
+        <a>Forgot Password?</a>
+      </div>
+
+      <div class="ion-margin-top">
+        <ion-button
+            expand="block"
+            (click)="login()"
+            size="small">Ingresar
+        </ion-button>
+      </div>
+
+      <div class="ion-margin-top ion-padding" >
+        <p>Registrate si aún no tienes cuenta.</p>
+        <ion-button
+            expand="block"
+            size="small"
+            shape="round"
+            fill="clear">Registar
+        </ion-button>
+      </div>
+
+      <ion-button
+          href="https://todosi.com/#/index"
+          fill="clear"
+          shape="round"
+          color="danger">
+        <small>Ir a la pagina Principal</small>
+      </ion-button>
+    </div>
+
+  </ion-card>
+</ion-content>

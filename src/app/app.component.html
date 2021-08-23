@@ -1,3 +1,30 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <mat-toolbar class="toolbar-nav" >
+    <mat-toolbar class="toolbar-logo">
+            <div class="logo-menu-close" [ngClass]="{'logo-menu-open': open }"></div>
+    </mat-toolbar>
+  <div mat-menu-item (click)="toggleSidebar()" >
+    <mat-icon matTooltip="Desplegar Menu">menu</mat-icon>&nbsp;
+  </div>
+</mat-toolbar>
+<mat-sidenav-container class="full-height" autosize="true">
+<mat-sidenav [ngClass]="{'m-sidenav': true, 'm-sidenav-small': sidenavSmall}" mode="side" opened (click)="toggleSidebar()">
+  <div class="main-menu">
+    <div class="user-data" style="text-align: center;">
+      <img class="card-img-top" [hidden]="collapse" src="https://i.ibb.co/DGLdnfc/user-font-awesome-nuevo-usuario-icono-11563566658mjtfvilgcs.png" style="border-radius: 50%; max-width: 6vw;" > 
+      <p class="name close " [hidden]="collapse">UserName LastName</p>
+      <p class="email close" [hidden]="collapse">Mail@mail.com</p>
+    </div>
+    <div mat-menu-item *ngFor="let i of sideMenu" [routerLink]="['/', i.route]" class="with-icon " (click)="$event.stopPropagation()">
+        <mat-icon [matTooltip]="i.toolTip">{{ i.icon }}</mat-icon>&nbsp;
+        <span class="" [hidden]="collapse">{{ i.name }}</span>
+    </div>
+  </div>
+</mat-sidenav>
+<mat-sidenav-content [ngClass]="{'m-main': true, 'm-main-large': sidenavSmall}">
+  <div class="full">
+    <ion-router-outlet></ion-router-outlet>
+  </div>
+</mat-sidenav-content>
+</mat-sidenav-container>
 </ion-app>
